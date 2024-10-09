@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Kegiatan gweh😏</title>
+    <link rel="icon" href="icon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Jadwal Kegiatan gweh😏</h1>
+    <div id="currentTime"></div>
+    <div id="activity">Tidak ada kegiatan saat ini</div>
+
+    <div class="container">
+      <div class="table-container">
+        <table id="workSchedule">
+          <thead>
+            <tr>
+              <th>Waktu Mulai</th>
+              <th>Waktu Selesai</th>
+              <th>lama kegiatan</th>
+              <th>Kegiatan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>04:00</td>
+              <td>04:30</td>
+              <td>30 Menit</td>
+              <td>Sholat Shubuh</td>
+            </tr>
+            <tr>
+              <td>04:30</td>
+              <td>08:30</td>
+              <td>4 Jam</td>
+              <td>Lanjut tidur</td>
+            </tr>
+            <tr>
+              <td>08:30</td>
+              <td>09:00</td>
+              <td>30 Menit</td>
+              <td>Berangkat PKL</td>
+            </tr>
+            <tr>
+              <td>09:00</td>
+              <td>12:00</td>
+              <td>3 Jam</td>
+              <td>PKL</td>
+            </tr>
+            <tr>
+              <td>12:00</td>
+              <td>13:00</td>
+              <td>1 Jam</td>
+              <td>Istirahat Makan Siang</td>
+            </tr>
+            <tr>
+              <td>13:00</td>
+              <td>15:00</td>
+              <td>2 Jam</td>
+              <td>Lanjut PKL</td>
+            </tr>
+            <tr>
+              <td>15:00</td>
+              <td>15:30</td>
+              <td>30 Menit</td>
+              <td>Sholat Ashar</td>
+            </tr>
+            <tr>
+              <td>15:30</td>
+              <td>16:30</td>
+              <td>1 Jam</td>
+              <td>beres-beres</td>
+            </tr>
+            <tr>
+              <td>16:30</td>
+              <td>17:00</td>
+              <td>30 Menit</td>
+              <td>pulang PKL</td>
+            </tr>
+            <tr>
+              <td>17:00</td>
+              <td>18:00</td>
+              <td>1 Jam</td>
+              <td>baca aktikel terkini</td>
+            </tr>
+            <tr>
+              <td>18:00</td>
+              <td>18:30</td>
+              <td>30 Menit</td>
+              <td>Sholat magrib</td>
+            </tr>
+            <tr>
+              <td>18:30</td>
+              <td>19:00</td>
+              <td>30 Menit</td>
+              <td>ngaji</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>19:30</td>
+              <td>30 Menit</td>
+              <td>Sholat Isya</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>21:00</td>
+              <td>2 Jam</td>
+              <td>main game</td>
+            </tr>
+            <tr>
+              <td>21:00</td>
+              <td>04:00</td>
+              <td>7 Jam</td>
+              <td>turu</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Tabel hari libur -->
+        <table id="holidaySchedule">
+          <thead>
+            <tr>
+              <th>Waktu Mulai</th>
+              <th>Waktu Selesai</th>
+              <th>lama kegiatan</th>
+              <th>Kegiatan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>04:00</td>
+              <td>04:30</td>
+              <td>30 Menit</td>
+              <td>Sholat Shubuh</td>
+            </tr>
+            <tr>
+              <td>04:30</td>
+              <td>07:00</td>
+              <td>2 Jam 30 Menit</td>
+              <td>lanjut Tidur</td>
+            </tr>
+            <tr>
+              <td>07:00</td>
+              <td>08:00</td>
+              <td>1 Jam</td>
+              <td>Olahraga</td>
+            </tr>
+            <tr>
+              <td>08:00</td>
+              <td>12:00</td>
+              <td>4 Jam</td>
+              <td>Lagi gabut</td>
+            </tr>
+            <tr>
+              <td>12:00</td>
+              <td>12:30</td>
+              <td>30 Menit</td>
+              <td>Sholat Dzhuhur</td>
+            </tr>
+            <tr>
+              <td>12:30</td>
+              <td>15:00</td>
+              <td>4 Jam 30 Menit</td>
+              <td>gabut</td>
+            </tr>
+            <tr>
+              <td>15:00</td>
+              <td>15:30</td>
+              <td>30 Menit</td>
+              <td>Sholat Ashar</td>
+            </tr>
+            <tr>
+              <td>15:30</td>
+              <td>18:00</td>
+              <td>2 Jam 30 Menit</td>
+              <td>gabut</td>
+            </tr>
+            <tr>
+              <td>18:00</td>
+              <td>18:30</td>
+              <td>30 Menit</td>
+              <td>Sholat Magrib</td>
+            </tr>
+            <tr>
+              <td>18:30</td>
+              <td>19:00</td>
+              <td>30 Menit</td>
+              <td>ngaji</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>19:30</td>
+              <td>30 Menit</td>
+              <td>sholat Isya</td>
+            </tr>
+            <tr>
+              <td>19:30</td>
+              <td>21:00</td>
+              <td>1 Jam 30 Menit</td>
+              <td>Main Game</td>
+            </tr>
+            <tr>
+              <td>21:00</td>
+              <td>04:00</td>
+              <td>7 Jam</td>
+              <td>Tidur</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="current-activity-info" id="sidebarActivity"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
