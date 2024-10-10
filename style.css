@@ -61,18 +61,6 @@ tr.current-activity {
   background-color: yellow;
 }
 
-.current-activity-sidebar {
-  position: fixed;
-  right: 0;
-  top: 100px; /* Sesuaikan posisi vertikal */
-  width: 250px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  display: none; /* Default disembunyikan */
-}
-
 @media (max-width: 768px) {
   table {
     font-size: 14px;

@@ -10,11 +10,6 @@ const schedule = [
   { days: [1, 2, 3, 4, 5], start: "15:30", end: "16:30", activity: "beres-beres PKL" },
   { days: [1, 2, 3, 4, 5], start: "16:30", end: "17:00", activity: "balik PKL wak 😁" },
   { days: [1, 2, 3, 4, 5], start: "17:00", end: "18:00", activity: "baca artikel wak" },
-  { days: [1, 2, 3, 4, 5, 6, 0], start: "18:00", end: "18:30", activity: "sholat magrib" },
-  { days: [1, 2, 3, 4, 5, 6, 0], start: "18:30", end: "19:00", activity: "lagi ngaji wak jan ganggu!!" },
-  { days: [1, 2, 3, 4, 5, 6, 0], start: "19:00", end: "19:30", activity: "Sholat Isya" },
-  { days: [1, 2, 3, 4, 5, 6, 0], start: "19:00", end: "21:00", activity: "Lagi main Game😏" },
-  { days: [1, 2, 3, 4, 5, 6, 0], start: "21:00", end: "04:00", activity: "turu🛌💤" },
   // Sabtu dan Minggu (6,0)
   { days: [6, 0], start: "04:30", end: "07:00", activity: "lanjut turu" },
   { days: [6, 0], start: "07:00", end: "08:00", activity: "olah raga" },
@@ -23,6 +18,12 @@ const schedule = [
   { days: [6, 0], start: "12:30", end: "15:00", activity: "gabut lagi" },
   { days: [6, 0], start: "15:00", end: "15:30", activity: "Sholat Ashar" },
   { days: [6, 0], start: "15:30", end: "18:00", activity: "gabut lagi dan lagi" },
+
+  { days: [1, 2, 3, 4, 5, 6, 0], start: "18:00", end: "18:30", activity: "sholat magrib" },
+  { days: [1, 2, 3, 4, 5, 6, 0], start: "18:30", end: "19:00", activity: "lagi ngaji wak jan ganggu!!" },
+  { days: [1, 2, 3, 4, 5, 6, 0], start: "19:00", end: "19:30", activity: "Sholat Isya" },
+  { days: [1, 2, 3, 4, 5, 6, 0], start: "19:00", end: "21:00", activity: "Lagi main Game😏" },
+  { days: [1, 2, 3, 4, 5, 6, 0], start: "21:00", end: "04:00", activity: "turu🛌💤" },
 ];
 
 function displayCurrentTime() {
@@ -94,7 +95,7 @@ function checkSchedule() {
 
           // Posisikan sidebar tepat di sebelah kanan baris yang memiliki background kuning
           currentActivityInfo.style.top = `${rowRect.top + window.scrollY}px`; // Sejajarkan vertikal dengan baris
-          currentActivityInfo.style.left = `${tableRect.right + 20 + window.scrollX}px`; // Tepat di kanan tabel dengan jarak 20px
+          currentActivityInfo.style.left = `${tableRect.right + 5 + window.scrollX}px`; // Tepat di kanan tabel dengan jarak 20px
 
           // Update teks dengan kegiatan saat ini
           currentActivityInfo.innerText = `👈sekarang lagi ${item.activity}`;
